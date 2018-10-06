@@ -1,0 +1,53 @@
+body {
+	background: #aaa;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+}
+nav {
+	background: #666;
+}
+
+#name {
+	padding: 0 .5em;
+	font-family: "Nanum Gothic";
+	font-size: 3em;
+	margin: 0;
+	color: #fff;
+}
+
+#firstName {
+	color: #800015;
+	color: #A61919;
+	color: #fff;
+	
+}
+
+#right-nav li {
+	padding: 1em 2em;
+	margin: 1em;
+	background: #800015;
+	background: #A61919;
+	color: white;
+}
+
+#right-nav {
+	display: flex;
+	justify-content: space-around;
+	font-family: "Nanum Gothic";
+}
+
+#banner {
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
