@@ -1,53 +1,90 @@
-body {
-	background: #aaa;
+
+#grid-wrapper {
+	display: grid;
+	grid-template-rows: 4;
 }
 
-nav {
+header {
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background: #666;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
+
 
 ul {
 	list-style: none;
 }
-nav {
-	background: #666;
-}
 
-#name {
-	padding: 0 .5em;
+
+h1 {
+	padding: 0 0.5em;
 	font-family: "Nanum Gothic";
 	font-size: 3em;
 	margin: 0;
 	color: #fff;
 }
 
-#firstName {
-	color: #800015;
-	color: #A61919;
-	color: #fff;
-	
-}
 
-#right-nav li {
+nav ul li {
 	padding: 1em 2em;
 	margin: 1em;
+	border-radius: 10px;
 	background: #800015;
 	background: #A61919;
 	color: white;
 }
 
-#right-nav {
+nav ul {
 	display: flex;
 	justify-content: space-around;
 	font-family: "Nanum Gothic";
 }
 
 #banner {
-	height: 500px;
+	height: 100vh;
+	background: url('../images/keyboard.jpg') no-repeat 0 -40px;
+	background-size: cover;
+	font-size: 2em;
+	font-family: "Nanum Gothic";
+	position: relative;
+	top: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+
+
+ #overlay {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: rgba(248, 247, 216, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+} 
+
+nav ul li:hover {
+	background-color: rgb(90, 24, 24);
+}
+
+a {
+	text-decoration: none;
+}
+
+#aboutMe {
+	height: 100vh;
+}
+
+h2, h3 {
+	padding: 0;
+	margin: 0;
 }

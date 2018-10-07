@@ -7,22 +7,30 @@
 	<link type="text/css" rel="stylesheet" href="css/layout.css">
 </head>
 <body>
+	<div id="grid-wrapper">
 	<header>
-	<nav>
 	
-	<p id="name"><span id="firstName">Ashley</span> <span id="lastName">Stanley</span></p>
-		<ul id="right-nav">
-			<li>About Me</li>
-			<li>Projects</li>
+	
+	<a href="#banner"><h1 id="name"><span id="firstName">Ashley</span> <span id="lastName">Stanley</span></h1></a>
+	
+	<nav>
+
+	<ul>
+			<a href="#aboutMe"><li>About Me</li></a>
+			<a href="#projects"><li>Projects</li></a>
 		</ul>
 	</nav>
-</div>
-	<div id=banner>
-	<h1>Ashley Stanley</h1>
-	<h3> Junior Web Developer</h3>
-	</div>
+
+	
 	</header>
 	<main>
+			<section id=banner>
+				
+				<div id="overlay">
+					<h2>Ashley Stanley</h2>
+					<h3> Junior Web Developer</h3>
+			</div>
+			</section>
 		<section id="aboutMe">
 			<img src="">
 			<p>Biographical info</p>
@@ -33,7 +41,7 @@
 				<li>LinkedIn</li>
 			</ul>
 		</section>
-		<section id="Projects">
+		<section id="projects">
 			<article id="project1">
 				<p> Project 1</p>
 			</article>
@@ -46,7 +54,8 @@
 		</section>
 	</main>
 	<footer>
+		<p>Photo by Sergi Kabrera on Unsplash</p>
 	</footer>
-	
+	</div>
 </body>
 </html>
