@@ -1,24 +1,26 @@
-
+/*
 #grid-wrapper {
 	display: grid;
-	grid-template-rows: 4;
+}
+*/
+
+body {
+	box-sizing: border-box;
+	font-family: "Nanum Gothic";
 }
 
 header {
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #666;
+	background: #333;
 	position: fixed;
 	top: 0;
 	width: 100%;
 }
 
 
-ul {
-	list-style: none;
-}
+
 
 
 h1 {
@@ -31,23 +33,28 @@ h1 {
 
 
 nav ul li {
+	
 	padding: 1em 2em;
 	margin: 1em;
 	border-radius: 10px;
 	background: #800015;
 	background: #A61919;
 	color: white;
+	text-align: center;
+	
 }
 
 nav ul {
-	display: flex;
-	justify-content: space-around;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	font-family: "Nanum Gothic";
+	
 }
 
 #banner {
 	height: 100vh;
-	background: url('../images/keyboard.jpg') no-repeat 0 -40px;
+	background: url('../images/keyboard.jpg') no-repeat 0 -40px fixed;
 	background-size: cover;
 	font-size: 2em;
 	font-family: "Nanum Gothic";
@@ -55,6 +62,35 @@ nav ul {
 	top: 0;
 	z-index: -1;
 	overflow: hidden;
+
+}
+
+img {
+	height: 250px;
+	
+	border: 1px solid black;
+	
+}
+
+.img-container {
+	border-radius: 20px;
+	display: block;
+    width: 40px;
+	height: 40px;
+	overflow: hidden;
+}
+
+#email {
+	list-style-image: url('../images/emailIcon.png');
+}
+
+#github {
+	list-style-image: url('../images/emailIcon.png');
+}
+
+#linkedIn {
+	list-style-image: url('../images/linkedinIcon.png');
+
 }
 
 
@@ -64,12 +100,14 @@ nav ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(248, 247, 216, 0.3);
+	background-color: rgba(44, 44, 40, 0.6);
+	/* background-color: rgba(248, 247, 216, 0.3); */
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+	height: 100vh;
+
 } 
 
 nav ul li:hover {
@@ -82,9 +120,57 @@ a {
 
 #aboutMe {
 	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: end;
+}
+
+#profiles{
+	padding-left: 2em;
+}
+
+#info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40vw;
+	height: 80vh;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40vw;
+	height: 80vh;
 }
 
 h2, h3 {
 	padding: 0;
 	margin: 0;
+	color: white;
 }
+
+#projects {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+
+}
+
+footer {
+	background: #333;
+	color: white;
+	height: 10em;
+	font-family: "Nanum Gothic";
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 2em;
+}
+
