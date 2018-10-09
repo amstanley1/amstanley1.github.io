@@ -13,6 +13,7 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 2;
 }
 
 
@@ -56,14 +57,12 @@ nav ul {
 	font-family: "Nanum Gothic";
 	position: relative;
 	top: 0;
-	z-index: -1;
 	overflow: hidden;
 
 }
 
 img {
 	height: 250px;
-	
 	border: 1px solid black;
 	
 }
@@ -97,7 +96,6 @@ img {
 
 .icon {
 	position: relative;
-	/* Adjust these values accordingly */
 	top: 15px;
 	left: -10px;
   }
@@ -133,7 +131,7 @@ a {
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
 	align-items: start;
-	z-index: -1;
+
 }
 
 #profiles{
@@ -148,7 +146,6 @@ a {
 	height: 80vh;
 	position: relative;
 	top: 18vh;
-	z-index: -1;
 }
 
 #contact {
@@ -159,8 +156,17 @@ a {
 	height: 80vh;
 	position: relative;
 	top: 18vh;
-	z-index: -1;
+
 }
+
+a.svg:after {
+	content: ""; 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+  }
 
 h2, h3 {
 	padding: 0;
@@ -183,7 +189,7 @@ h4 {
 #projects h4 {
 	position: relative;
 	top: 25vh;
-	z-index: -1;
+
 }
 
 #project-grid {
@@ -193,7 +199,7 @@ h4 {
 	align-items: center;
 	position: relative;
 	top: 25vh;
-	z-index: -1;
+	
 }
 
 footer {
