@@ -261,3 +261,7 @@ footer {
 	padding-left: 3em;
 }
 
+.svg {
+	filter: invert(1);
+  }
+
