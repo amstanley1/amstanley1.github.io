@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700|Nanum+Gothic" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/normalize.css">
 	<link type="text/css" rel="stylesheet" href="css/layout.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 	<div id="grid-wrapper">
@@ -32,13 +33,14 @@
 			</div>
 			</section>
 		<section id="aboutMe">
+				<div class="arrow-down"></div>
 			<article id="info">
 				<h4>About Me</h4>
-				<img src="../images/stanleyheadshot.jpg">
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi optio quidem atque itaque dolores quae, reiciendis aperiam similique adipisci vel! Debitis totam fuga amet eum dolorem aspernatur quasi facere eligendi.</p>
+				<img src="../images/stanleyheadshot.jpg" id="headshot">
+				<p id="bio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi optio quidem atque itaque dolores quae, reiciendis aperiam similique adipisci vel! Debitis totam fuga amet eum dolorem aspernatur quasi facere eligendi.</p>
 		   </article>
 		   <article id="contact">
-			<a href="github.com"><h4>Contact</h4></a>
+			<h4>Contact</h4>
 			<ul id="profiles">
 				<a href="mailto:amstnyl@gmail.com"><li id="email"><img src="../images/gmail.svg" class="icon">amstnly@gmail.com</li></a>
 				<a href="https://github.com/amstanley1"><li id="github"><img src="../images/github.svg" class="icon">github.com/amstanley1</li></a>
@@ -47,23 +49,43 @@
 		</article>
 		</section>
 		<section id="projects">
+				<div class="arrow-down"></div>
 			<h4>Projects</h4>
 			<div id=project-grid>
 			<article id="project1">
-				<h6>Virtual Pet Shelter</h6>
+				<h6>Film Reviews</h6>
+				<img src="../images/filmreviews.png">
+				<p>Web application with  a gallery of film reviews,  user can click an individual film review to go to review’s page and see its content.</p>
+				<p class="skills">Java, Spring MVC</p>
 			</article>
 			<article id="project2">
 				<h6>Virtual Pets Amok</h6>
+				<img src="../images/virtualpetsamok.jpg">
+				<p>Console application of a virtual pet shelter with robotic and organic cats and dogs. User can feed and water organic pets, oil robotic pets, and walk the dogs.</p>
+				<p class="skills">Java, Object Oriented</p>
 			</article>
 			<article id="project3">
-				<h6>Film Reviews</h6>
+				<h6>Virtual Pet Shelter</h6>
+				<img src="../images/virtualpetshelter.jpg">
+				<p> Console application of a virtual pet shelter with several virtual horses the user can select and feed, play with, and water to decrease need levels which rise automatically as the game is played.</p>
+				<p class="skills">Java, Object Oriented</p>
 			</article>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<p>Background image by Sergi Kabrera on Unsplash</p>
+		<div id="footer-first-column">
+		<p>Computer keyboard background image by Sergi Kabrera on Unsplash</p>
+		<p>Dogs image by Matt Nelson on Unsplash</p>
+		<p>Horses image by Christine Mendoza on Unsplash</p>
+		</div>
+		<div id="footer-second-column">
+			
+				<a href="mailto:amstnyl@gmail.com"><img src="../images/gmail.svg" class="icon"></a>
+				<a href="https://github.com/amstanley1"><img src="../images/github.svg" class="icon"></a>
+				<a href="https://www.linkedin.com/in/ashleystanley1/"><img src="../images/linkedin.svg" class="icon"></a>
+				
+			</div>
 	</footer>
-	</div>
 </body>
 </html>
