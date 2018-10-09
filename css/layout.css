@@ -1,8 +1,4 @@
-/*
-#grid-wrapper {
-	display: grid;
-}
-*/
+
 
 body {
 	box-sizing: border-box;
@@ -80,18 +76,31 @@ img {
 	overflow: hidden;
 }
 
-#email {
-	list-style-image: url('../images/emailIcon.png');
+#profiles {
+	list-style: none;
+	font-size: 20px;
 }
 
-#github {
-	list-style-image: url('../images/emailIcon.png');
+#profiles li {
+	margin: 10px;
 }
 
-#linkedIn {
-	list-style-image: url('../images/linkedinIcon.png');
-
+#profiles a {
+	color: black;
 }
+
+#profiles img {
+	width: 50px;
+	height: 50px;
+	border: none;
+}
+
+.icon {
+	position: relative;
+	/* Adjust these values accordingly */
+	top: 15px;
+	left: -10px;
+  }
 
 
 
@@ -123,7 +132,8 @@ a {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
-	align-items: end;
+	align-items: start;
+	z-index: -1;
 }
 
 #profiles{
@@ -133,19 +143,23 @@ a {
 #info {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	width: 40vw;
 	height: 80vh;
+	position: relative;
+	top: 18vh;
+	z-index: -1;
 }
 
 #contact {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	width: 40vw;
+	width: 50vw;
 	height: 80vh;
+	position: relative;
+	top: 18vh;
+	z-index: -1;
 }
 
 h2, h3 {
@@ -154,13 +168,32 @@ h2, h3 {
 	color: white;
 }
 
+
+
+h4 {
+	font-size: 2em;
+	text-align: center;
+}
+
 #projects {
 	height: 100vh;
+	
+}
+
+#projects h4 {
+	position: relative;
+	top: 25vh;
+	z-index: -1;
+}
+
+#project-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	justify-items: center;
 	align-items: center;
-
+	position: relative;
+	top: 25vh;
+	z-index: -1;
 }
 
 footer {
