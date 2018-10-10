@@ -2,90 +2,84 @@
 <html>
 <head>
 	<title>Ashley Stanley | Developer</title>
-	<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700|Nanum+Gothic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=K2D:400,700" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/normalize.css">
 	<link type="text/css" rel="stylesheet" href="css/layout.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<div id="grid-wrapper">
 	<header>
-	
-	
-	<a href="#banner"><h1 id="name"><span id="firstName">Ashley</span> <span id="lastName">Stanley</span></h1></a>
-	
-	<nav>
-
-	<ul>
-			<a href="#aboutMe"><li>About Me</li></a>
-			<a href="#projects"><li>Projects</li></a>
-		</ul>
-	</nav>
-
-	
+		<a href="#banner"><h1 id="name"><span id="firstName">Ashley</span> <span id="lastName">Stanley</span></h1></a>
+		<nav>
+			<ul>
+				<a href="#aboutMe"><li>About Me</li></a>
+				<a href="#projects"><li>Projects</li></a>
+			</ul>
+		</nav>
 	</header>
 	<main>
-			<section id=banner>
-				
-				<div id="overlay">
-					<h2>Ashley Stanley</h2>
-					<h3> Junior Software Developer</h3>
+		<section id=banner>
+			<div id="overlay">
+				<h2>Ashley Stanley</h2>
+				<h3> Junior Software Developer</h3>
 			</div>
-			</section>
+		</section>
 		<section id="aboutMe">
-				<div class="arrow-down"></div>
+			<div class="arrow-down"></div>
 			<article id="info">
 				<h4>About Me</h4>
-				<img src="../images/stanleyheadshot.jpg" id="headshot">
-				<p id="bio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi optio quidem atque itaque dolores quae, reiciendis aperiam similique adipisci vel! Debitis totam fuga amet eum dolorem aspernatur quasi facere eligendi.</p>
-		   </article>
+				<div id="headshot"></div>
+				<p id="bio">I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a part-time coding boot camp, learning agile full-stack software development.</p>
+				<p id="skills-heading">Technical Skills:</p>
+					<p id="skills">Java  •  Spring  •  Hibernate  •  JavaScript  •  jQuery  •  HTML5  •  CSS3  •  MVC  •  Responsive Design / Mobile
+						Structured Query Language (SQL)  •  Transactional Databases / MSSQL  •  Object Oriented  •  Source Control / Git
+						</p>
+			</article>
 		   <article id="contact">
-			<h4>Contact</h4>
-			<ul id="profiles">
-				<a href="mailto:amstnyl@gmail.com"><li id="email"><img src="../images/gmail.svg" class="icon">amstnly@gmail.com</li></a>
-				<a href="https://github.com/amstanley1"  target="_blank"><li id="github"><img src="../images/github.svg" class="icon">github.com/amstanley1</li></a>
-				<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><li id="linkedIn"><img src="../images/linkedin.svg" class="icon">linkedin.com/ashleystanley1</li></a>
-			</ul>
-		</article>
+				<h4>Contact</h4>
+				<ul id="profiles">
+					<a href="mailto:amstnyl@gmail.com"><li id="email"><img src="../images/gmail.svg" class="icon">amstnly@gmail.com</li></a>
+					<a href="https://github.com/amstanley1"  target="_blank"><li id="github"><img src="../images/github.svg" class="icon">github.com/amstanley1</li></a>
+					<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><li id="linkedIn"><img src="../images/linkedin.svg" class="icon">linkedin.com/ashleystanley1</li></a>
+				</ul>
+			</article>
 		</section>
 		<section id="projects">
-				<div class="arrow-down"></div>
+			<div class="arrow-down"></div>
 			<h4>Projects</h4>
 			<div id=project-grid>
-			<article id="project1">
-				<h6>Film Reviews</h6>
-				<img src="../images/filmreviews.png">
-				<p>Web application with  a gallery of film reviews,  user can click an individual film review to go to review’s page and see its content.</p>
-				<p class="skills">Java, Spring MVC</p>
-			</article>
-			<article id="project2">
-				<h6>Virtual Pets Amok</h6>
-				<img src="../images/virtualpetsamok.jpg">
-				<p>Console application of a virtual pet shelter with robotic and organic cats and dogs. User can feed and water organic pets, oil robotic pets, and walk the dogs.</p>
-				<p class="skills">Java, Object Oriented</p>
-			</article>
-			<article id="project3">
-				<h6>Virtual Pet Shelter</h6>
-				<img src="../images/virtualpetshelter.jpg">
-				<p> Console application of a virtual pet shelter with several virtual horses the user can select and feed, play with, and water to decrease need levels which rise automatically as the game is played.</p>
-				<p class="skills">Java, Object Oriented</p>
-			</article>
+				<article id="project1">
+					<h6>Film Reviews</h6>
+					<div id="film-reviews">	</div>
+					<p>Web application with  a gallery of film reviews,  user can click an individual film review to go to review’s page and see its content.</p>
+					<p class="skills">Java, Spring MVC</p>
+				</article>
+				<article id="project2">
+					<h6>Virtual Pets Amok</h6>
+					<div id="virtual-pets-amok"></div>
+					<p>Console application of a virtual pet shelter with robotic and organic cats and dogs. User can feed and water organic pets, oil robotic pets, and walk the dogs.</p>
+					<p class="skills">Java, Object Oriented</p>
+				</article>
+				<article id="project3">
+					<h6>Virtual Pet Shelter</h6>
+					<div id="virtual-pet-shelter"></div>	
+					<p> Console application of a virtual pet shelter with several virtual horses the user can select and feed, play with, and water to decrease need levels which rise automatically as the game is played.</p>
+					<p class="skills">Java, Object Oriented</p>
+				</article>
 			</div>
 		</section>
 	</main>
 	<footer>
 		<div id="footer-first-column">
-		<p>Computer keyboard background image by Sergi Kabrera on Unsplash</p>
-		<p>Dogs image by Matt Nelson on Unsplash</p>
-		<p>Horses image by Christine Mendoza on Unsplash</p>
+			<p>Computer keyboard background image by Sergi Kabrera on Unsplash</p>
+			<p>Dogs image by Matt Nelson on Unsplash</p>
+			<p>Horses image by Christine Mendoza on Unsplash</p>
 		</div>
 		<div id="footer-second-column">
-			
-				<a href="mailto:amstnyl@gmail.com"><img src="../images/gmail.svg" class="svg"></a>
-				<a href="https://github.com/amstanley1"  target="_blank"><img src="../images/github.svg" class="svg"></a>
-				<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><img src="../images/linkedin.svg" class="svg"></a>
-				
-			</div>
+			<a href="mailto:amstnyl@gmail.com"><img src="../images/gmail.svg" class="svg"></a>
+			<a href="https://github.com/amstanley1"  target="_blank"><img src="../images/github.svg" class="svg"></a>
+			<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><img src="../images/linkedin.svg" class="svg"></a>	
+		</div>
 	</footer>
 </body>
 </html>

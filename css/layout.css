@@ -1,8 +1,14 @@
-
+:root {
+	--min-width: 900px;
+	--max-width: 1550px;
+}
 
 body {
 	box-sizing: border-box;
-	font-family: "Nanum Gothic";
+	font-family: 'K2D', sans-serif;
+	min-width: var(--min-width);
+	max-width: var(--max-width);
+	width: 100vw;
 }
 
 header {
@@ -14,56 +20,52 @@ header {
 	top: 0;
 	width: 100%;
 	z-index: 2;
+	min-width: 1000px;
 }
-
-
-
-
 
 h1 {
 	padding: 0 0.5em;
-	font-family: "Nanum Gothic";
-	font-size: 3em;
+	font-size: 3.5em;
 	margin: 0;
 	color: #fff;
-}
-
-
-nav ul li {
-	
-	padding: 1em 2em;
-	margin: 1em;
-	border-radius: 10px;
-	background: #800015;
-	background: #A61919;
-	color: white;
-	text-align: center;
-	
 }
 
 nav ul {
 	list-style: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	font-family: "Nanum Gothic";
-	
+	grid-template-columns: 1fr 1fr;	
+}
+
+nav ul li {
+	padding: .75em 2em;
+	margin: 1em;
+	border-radius: 10px;
+	background: #A61919;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
 }
 
 #banner {
 	height: 100vh;
 	background: url('../images/keyboard.jpg') no-repeat 0 -40px fixed;
 	background-size: cover;
-	font-size: 2em;
-	font-family: "Nanum Gothic";
+	font-size: 2.5em;
 	position: relative;
 	top: 0;
 	overflow: hidden;
-
+	min-width: var(--min-width);
 }
 
 #headshot {
-	height: 250px;
+	height: 100%;
+	width: 40%;
 	border: 1px solid black;
+	background-image: url("../images/stanleyheadshot.jpg"); /* The image used */
+	background-color: #fff; /* Used if the image is unavailable */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #profiles {
@@ -94,7 +96,7 @@ nav ul {
 	position: relative;
 	top: 15px;
 	left: -10px;
-  }
+}
 
 #aboutMe h4 {
 	padding: 1em;
@@ -106,13 +108,11 @@ nav ul {
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(44, 44, 40, 0.6);
-	/* background-color: rgba(248, 247, 216, 0.3); */
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
 	height: 100vh;
-
 } 
 
 nav ul li:hover {
@@ -134,6 +134,8 @@ a {
 
 #profiles{
 	padding-left: 2em;
+	min-width: 450px;
+	max-width: 775px;
 }
 
 #info {
@@ -144,6 +146,8 @@ a {
 	height: 80vh;
 	position: relative;
 	top: 18vh;
+	min-width: 450px;
+	max-width: 775px;
 }
 
 #contact {
@@ -156,7 +160,12 @@ a {
 	top: 18vh;
 }
 
-#bio {
+#bio, #skills {
+	padding: 0 4em;
+}
+
+#skills-heading {
+	font-weight: 700;
 	padding: 0 4em;
 }
 
@@ -169,10 +178,12 @@ a {
 	position: absolute;
 	left: 50%;
 	margin-left: -15vh;
-}
+} 
 
 #projects {
-	border-top: 2vh solid #777;
+	border-top: 10px solid #777;
+	min-width: var(--min-width);
+	max-width: var(--max-width);
 }
 
 
@@ -180,14 +191,13 @@ h2, h3 {
 	padding: 0;
 	margin: 0;
 	color: white;
+	text-align: center;
 }
 
 h6 {
 	text-align: center;
 	font-size: 1.5em;
 }
-
-
 
 h4 {
 	font-size: 2em;
@@ -197,13 +207,11 @@ h4 {
 
 #projects {
 	height: 125vh;
-	
 }
 
 #projects h4 {
 	position: relative;
 	top: 25vh;
-
 }
 
 #project-grid {
@@ -213,34 +221,64 @@ h4 {
 	align-items: center;
 	position: relative;
 	top: 25vh;
+	min-width: var(--min-width);
+	grid-column-gap: 40px;
+	margin: 0 40px;
 }
 
 #project-grid article {
-	width: 30vw;
-	height: 100%;
+	width: 100%;
+	height: 600px;
 	overflow: hidden;
+	min-width: 300px;
+}
+
+#film-reviews {
+	background-image: url("../images/filmreviews.png"); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 50%; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	min-width: 300px;
+}
+
+#virtual-pets-amok {
+	background-image: url("../images/virtualpetsamok.jpg"); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 50%; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	min-width: 300px;
+}
+
+#virtual-pet-shelter {
+	background-image: url("../images/virtualpetshelter.jpg"); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 50%; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	min-width: 300px;
+}
+.skills {
+	font-weight: 700;
 }
 
 footer {
 	background: #333;
 	color: white;
-	font-family: "Nanum Gothic";
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
-	
 }
 
-#project-grid img {
-	height: 250px;
-	width: 100%;
-	position:relative; 
-	left:50%;
- 	transform:translateX(-50%);
-}
-
-.skills {
-	font-weight: 700;
+#footer-first-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 3em;
 }
 
 #footer-second-column {
@@ -254,14 +292,11 @@ footer {
 	width: 3em;
 }
 
-#footer-first-column {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	padding-left: 3em;
-}
-
 .svg {
 	filter: invert(1);
-  }
+}
+
+ 
+
+ 
 
