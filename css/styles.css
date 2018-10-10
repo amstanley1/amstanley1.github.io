@@ -102,7 +102,7 @@ nav ul li {
 	padding: 1em;
 }
 
- #overlay {
+#overlay {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -262,7 +262,8 @@ h4 {
 	background-size: cover; /* Resize the background image to cover the entire container */
 	min-width: 300px;
 }
-.skills {
+
+.project-skills {
 	font-weight: 700;
 }
 
