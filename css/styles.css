@@ -7,7 +7,6 @@ body {
 	box-sizing: border-box;
 	font-family: 'K2D', sans-serif;
 	min-width: var(--min-width);
-	max-width: var(--max-width);
 	width: 100vw;
 }
 
@@ -129,6 +128,7 @@ a {
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
 	align-items: start;
+
 
 }
 
