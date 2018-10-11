@@ -1,6 +1,5 @@
 :root {
 	--min-width: 900px;
-	--max-width: 1550px;
 }
 
 body {
@@ -183,7 +182,6 @@ a {
 #projects {
 	border-top: 10px solid #777;
 	min-width: var(--min-width);
-	max-width: var(--max-width);
 }
 
 
@@ -222,7 +220,7 @@ h4 {
 	position: relative;
 	top: 25vh;
 	min-width: var(--min-width);
-	grid-column-gap: 40px;
+	grid-column-gap: 1.66%;
 	margin: 0 40px;
 }
 
