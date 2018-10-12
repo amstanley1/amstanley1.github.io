@@ -133,11 +133,10 @@ a {
 
 #profiles{
 	padding-left: 2em;
-	min-width: 450px;
-	max-width: 775px;
+	
 }
 
-#info {
+#info, #contact {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -147,16 +146,6 @@ a {
 	top: 18vh;
 	min-width: 450px;
 	max-width: 775px;
-}
-
-#contact {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 50vw;
-	height: 80vh;
-	position: relative;
-	top: 18vh;
 }
 
 #bio, #skills {
@@ -236,27 +225,18 @@ h4 {
 }
 
 #film-reviews {
-	background-image: url("../images/filmreviews.png"); /* The image used */
-	background-color: #cccccc; /* Used if the image is unavailable */
-	height: 50%; /* You must set a specified height */
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
-	min-width: 300px;
+	background-image: url("../images/filmreviews.png");
 }
 
 #virtual-pets-amok {
-	background-image: url("../images/virtualpetsamok.jpg"); /* The image used */
-	background-color: #cccccc; /* Used if the image is unavailable */
-	height: 50%; /* You must set a specified height */
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
-	min-width: 300px;
+	background-image: url("../images/virtualpetsamok.jpg");
 }
 
 #virtual-pet-shelter {
-	background-image: url("../images/virtualpetshelter.jpg"); /* The image used */
+	background-image: url("../images/virtualpetshelter.jpg");
+}
+
+#film-reviews, #virtual-pets-amok, #virtual-pet-shelter {
 	background-color: #cccccc; /* Used if the image is unavailable */
 	height: 50%; /* You must set a specified height */
 	background-position: center; /* Center the image */
