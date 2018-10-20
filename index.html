@@ -14,7 +14,7 @@
 		</a>
 		<nav>
 			<ul>
-				<a href="#aboutMe"><li>About Me</li></a>
+				<a id="modal-trigger"><li>About Me</li></a>
 				<a href="#projects"><li>Projects</li></a>
 			</ul>
 		</nav>
@@ -26,6 +26,37 @@
 				<h3> Junior Software Developer</h3>
 			</div>
 		</section>
+		<section id="specialEvents">
+				<div class="arrow-down"></div>
+			<h2>Special Events</h2>
+		  <p>We regularly host socials and meetups to sharpen talent and foster connections. Join us!</p>
+	
+			<div id="slider">
+			  <div id="slider-frame">
+				
+				<div id="slider-prev">PREV</div>
+				<div id="slider-next">NEXT</div>
+	
+				<div id="slider-images">
+				  <div data-src="../images/filmreviews.png">
+					Let's boot up your new project.
+				  </div>
+				  <div data-src="../images/virtualpetsamok.jpg">
+					You'll want to double-click this one.
+				  </div>
+				  <div data-src="../images/virtualpetshelter.jpg">
+					Our cookies are super.
+				  </div>
+				</div>
+	
+			  </div>
+			  <div id="slider-caption">
+				The caption.
+			  </div>
+			</div>
+	
+		  </section>
+	
 		<section id="aboutMe">
 			<div class="arrow-down"></div>
 			<article id="info">
@@ -83,5 +114,18 @@
 			<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><img src="../images/linkedin.svg" class="svg"></a>	
 		</div>
 	</footer>
+
+	<div id="backdrop">
+		<div id="modal">
+		  <button class="text-button">Close</button>
+		  <h4>My Bio</h4>
+	
+		  <div id="modal-content">
+			  <p>I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a part-time coding boot camp, learning agile full-stack software development.</p>
+		  </div>
+		</div>
+	  </div>
+	
+	  <script src="./script.js"></script>
 </body>
 </html>
