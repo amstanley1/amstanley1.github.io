@@ -6,6 +6,7 @@
         addModalEventListeners();
         addSliderEventListeners();
         addNavEventListeners();
+        addProjectListeners();
     }
 
     function addNavEventListeners() {
@@ -120,3 +121,35 @@
     window.addEventListener('resize', windowResizeHandler); 
   }
 
+  function addProjectListeners() {
+    const projects = document.querySelectorAll('#project-grid article');
+
+    for (let i = 0; i < projects.length; i++) {
+      project[i].addEventListener('click', function() {
+
+        let projectDescription = project[i].querySelector('#projectDescription');
+        projectDescription.style.display = "block";
+      });
+    };
+
+   };
+
+   function addModalEventListeners() {
+
+    const modalTriggerElement = document.querySelector('#modal-trigger');
+
+    const modalTriggerClickHandler = function() {
+      document.body.classList.add('modal-open');
+    };
+
+    modalTriggerElement.addEventListener('click', modalTriggerClickHandler);
+
+    // Modal can be closed
+    const modalCloseButton = document.querySelector('#modal button');
+
+    const modalCloseButtonClickHandler = function() {
+      document.body.classList.remove('modal-open');
+    };
+
+    modalCloseButton.addEventListener('click', modalCloseButtonClickHandler);
+  }
