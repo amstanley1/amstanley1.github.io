@@ -14,7 +14,8 @@
 		</a>
 		<nav>
 			<ul>
-				<a id="modal-trigger"><li>About Me</li></a>
+				<a href="/index.html"><li>Home</li></a>
+				<a href="javascript:void(0);" id="modal-trigger"><li>About Me</li></a>
 				<a href="#projects"><li>Projects</li></a>
 			</ul>
 		</nav>
@@ -32,7 +33,7 @@
 		 
 	
 			<div id="slider">
-					<h2 id="sliderHeading">Projects</h2>
+					<h2 id="sliderHeading">Projects Preview</h2>
 			  <div id="slider-frame">
 				
 				<div id="slider-prev">PREV</div>
@@ -63,7 +64,7 @@
 			<article id="info">
 				<h4>About Me</h4>
 				<div id="headshot"></div>
-				<p id="bio">I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a part-time coding boot camp, learning agile full-stack software development.</p>
+				<p id="bio">I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a coding boot camp, learning agile full-stack software development.</p>
 				<p id="skills-heading">Technical Skills:</p>
 					<p id="skills">Java  •  Spring  •  Hibernate  •  JavaScript  •  jQuery  •  HTML5  •  CSS3  •  MVC  •  Responsive Design / Mobile
 						Structured Query Language (SQL)  •  Transactional Databases / MSSQL  •  Object Oriented  •  Source Control / Git
@@ -81,25 +82,28 @@
 		<section id="projects">
 			<div class="arrow-down"></div>
 			<h4>Projects</h4>
-			<div id=project-grid>
-				<a href="https://github.com/amstanley1/movie-reviews" target="_blank"><article id="project1">
+			<div id="project-grid">
+				<article id="project1">
 					<h6>Film Reviews</h6>
 					<div id="film-reviews">	</div>
-					<p class="projectDescription">Web application with  a gallery of film reviews,  user can click an individual film review to go to review’s page and see its content.</p>
+					<button class="showDescription">Show Description</button>
+					<p class="projectDescription closeDescription">Web application with  a gallery of film reviews,  user can click an individual film review to go to review’s page and see its content.</p>
 					<p class="project-skills">Java, Spring MVC</p>
-				</article></a>
-				<a href="https://github.com/amstanley1/virtual-pets-amok" target="_blank"><article id="project2">
+				</article>
+				<article id="project2">
 					<h6>Virtual Pets Amok</h6>
 					<div id="virtual-pets-amok"></div>
-					<p class="projectDescription">Console application of a virtual pet shelter with robotic and organic cats and dogs. User can feed and water organic pets, oil robotic pets, and walk the dogs.</p>
+					<button class="showDescription">Show Description</button>
+					<p class="projectDescription closeDescription">Console application of a virtual pet shelter with robotic and organic cats and dogs. User can feed and water organic pets, oil robotic pets, and walk the dogs.</p>
 					<p class="project-skills">Java, Object Oriented</p>
-				</article></a>
-				<a href="https://github.com/amstanley1/virtual-pet-shelter" target="_blank"><article id="project3">
+				</article>
+				<article id="project3">
 					<h6>Virtual Pet Shelter</h6>
-					<div id="virtual-pet-shelter"></div>	
-					<p class="projectDescription"> Console application of a virtual pet shelter with several virtual horses the user can select and feed, play with, and water to decrease need levels which rise automatically as the game is played.</p>
+					<div id="virtual-pet-shelter"></div>
+					<button class="showDescription">Show Description</button>
+					<p class="projectDescription closeDescription"> Console application of a virtual pet shelter with several virtual horses the user can select and feed, play with, and water to decrease need levels which rise automatically as the game is played.</p>
 					<p class="project-skills">Java, Object Oriented</p>
-				</article></a>
+				</article>
 			</div>
 		</section>
 	</main>
@@ -119,10 +123,31 @@
 	<div id="backdrop">
 		<div id="modal">
 		  <button class="text-button">Close</button>
-		  <h4>My Bio</h4>
+		  
 	
 		  <div id="modal-content">
-			  <p>I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a part-time coding boot camp, learning agile full-stack software development.</p>
+
+					<section id="modal-aboutMe">
+					
+							<article id="modal-info">
+								<h4>About Me</h4>
+								<!--<div id="headshot"></div>-->
+								<p id="bio">I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a coding boot camp, learning agile full-stack software development.</p>
+								<p id="skills-heading">Technical Skills:</p>
+									<p id="skills">Java  •  Spring  •  Hibernate  •  JavaScript  •  jQuery  •  HTML5  •  CSS3  •  MVC  •  Responsive Design / Mobile
+										Structured Query Language (SQL)  •  Transactional Databases / MSSQL  •  Object Oriented  •  Source Control / Git
+										</p>
+							</article>
+							 <article id="modal-contact">
+								<h4>Contact</h4>
+								<ul id="profiles">
+									<a href="mailto:amstnyl@gmail.com"><li id="email"><img src="../images/gmail.svg" class="icon">amstnly@gmail.com</li></a>
+									<a href="https://github.com/amstanley1"  target="_blank"><li id="github"><img src="../images/github.svg" class="icon">github.com/amstanley1</li></a>
+									<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><li id="linkedIn"><img src="../images/linkedin.svg" class="icon">linkedin.com/ashleystanley1</li></a>
+								</ul>
+							</article>
+						</section>	
+			  
 		  </div>
 		</div>
 	  </div>

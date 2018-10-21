@@ -43,11 +43,11 @@ h2, h3 {
 nav ul {
 	list-style: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr;	
+	grid-template-columns: 1fr 1fr 1fr;	
 }
 
 nav ul li {
-	padding: .75em 2em;
+	padding: .5em 1em;
 	margin: .5em 1em;
 	border-radius: 10px;
 	background: #A61919;
@@ -427,9 +427,43 @@ footer {
 	clear: both;
 	padding-top: 1em;
 	}
+
+	#modal-info, #modal-contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		height: 100%;
+		min-width: 450px;
+		max-width: 775px;
+	}
+
+	#modal-aboutMe {
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+		align-items: start;
+	}
+
+	#modal-headshot {
+		height: 100%;
+		width: 40%;
+		border: 1px solid black;
+		background-image: url("../images/stanleyheadshot.jpg"); /* The image used */
+		background-color: #fff; /* Used if the image is unavailable */
+		background-position: center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: cover; /* Resize the background image to cover the entire container */
+	}
 	
-	.projectDescription {
+
+	.closeDescription {
 		display: none;
+	}
+
+	.openDescription {
+		display: block;
 	}
 
   @media screen and (max-width: 750px) {
