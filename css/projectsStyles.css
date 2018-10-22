@@ -1,18 +1,9 @@
-:root {
-	--min-width: 900px;
-}
-
 body {
 	box-sizing: border-box;
 	font-family: 'K2D', sans-serif;
 	min-width: var(--min-width);
 	width: 100vw;
 }
-
-body.modal-open {
-	/* hide scrolling when modal open */
-	overflow: hidden;
-  }
 
 header {
 	display: flex;
@@ -55,168 +46,6 @@ nav ul li {
 	font-size: 1.5em;
 }
 
-#banner {
-	height: 100vh;
-	background: url('../images/keyboard.jpg') no-repeat 0 -40px fixed;
-	background-size: cover;
-	font-size: 2.5em;
-	position: relative;
-	top: 0;
-	overflow: hidden;
-	min-width: var(--min-width);
-}
-
-#projectSlider {
-	height: 100vh;
-}
-
-#sliderHeading {
-	font-size: 2em;
-	color: black;
-	padding: 1em;
-
-}
-
-
-#slider {
-	height: 80vh;
-	width: 75vw;
-	margin: 0 auto;
-	position: relative;
-	top: 15vh;
-}
-
-
-#slider ::selection {
-	color: inherit;
-	background: transparent;
-  }
-  
-  #slider-frame {
-	border: 1px solid #fff;
-	border-radius: 3px;
-	box-shadow: 0 0 5px #333;
-	position: relative;
-  }
-  
-  #slider-prev,
-  #slider-next {
-	width: 5%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	display: flex;
-	padding: 1em;
-	color: #fff;
-	font-weight: bold;
-	text-shadow: 0 0 2px #000;
-	transition: 0.5s;
-	cursor: pointer;
-  }
-  
-  #slider-prev:hover,
-  #slider-next:hover {
-	background: rgba(255,255,255,0.3);
-  }
-  
-  #slider-prev {
-	left: 0;
-	flex-direction: row;
-	align-items: center;
-  }
-  
-  #slider-next {
-	right: 0;
-	flex-direction: row-reverse;
-	align-items: center;
-  }
-  
-  #slider-frame {
-	background: #ccc;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-  height: 24em;
-  }
-  
-  #slider-frame [data-src] {
-	display: none;
-  }
-  
-  #slider-caption {
-	margin-top: 5px;
-	border-radius: 3px;
-	border: 1px solid #ccc;
-	padding: 0.2em 0.5em;
-	font-size: 0.8em;
-	text-align: center;
-	transition: 0.5s;
-	height: 5vh;
-  }
-  
-  #slider-caption.flash {
-	transition: 0s;
-	background: #ccc;
-  }
-
-#headshot {
-	height: 100%;
-	width: 40%;
-	border: 1px solid black;
-	background-image: url("../images/stanleyheadshot.jpg"); /* The image used */
-	background-color: #fff; /* Used if the image is unavailable */
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-#profiles {
-	list-style: none;
-	font-size: 20px;
-	margin: 0;
-}
-
-#profiles li {
-	margin: 30px;
-}
-
-#profiles li:first-child {
-	margin-top: 0;
-}
-
-#profiles a {
-	color: black;
-}
-
-#profiles img {
-	width: 50px;
-	height: 50px;
-	border: none;
-}
-
-.icon {
-	position: relative;
-	top: 15px;
-	left: -10px;
-}
-
-#aboutMe h4 {
-	padding: 1em;
-}
-
-#overlay {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(44, 44, 40, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-	height: 100vh;
-} 
-
 nav ul li:hover {
 	background-color: rgb(90, 24, 24);
 }
@@ -225,49 +54,6 @@ a {
 	text-decoration: none;
 }
 
-#aboutMe {
-	height: 100vh;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-items: center;
-	align-items: start;
-}
-
-#profiles{
-	padding-left: 2em;
-}
-
-#info, #contact {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 50vw;
-	height: 80vh;
-	position: relative;
-	top: 18vh;
-	min-width: 450px;
-	max-width: 775px;
-}
-
-#bio, #skills {
-	padding: 0 4em;
-}
-
-#skills-heading {
-	font-weight: 700;
-	padding: 0 4em;
-}
-
-.arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 15vh solid transparent;
-	border-right: 15vh solid transparent;
-	border-top: 15vh solid #777;
-	position: absolute;
-	left: 50%;
-	margin-left: -15vh;
-} 
 
 #projects {
 	border-top: 10px solid #777;
@@ -343,6 +129,14 @@ h4 {
 	font-weight: 700;
 }
 
+.closeDescription {
+    display: none;
+}
+
+.openDescription {
+    display: block;
+}
+
 footer {
 	background: #333;
 	color: white;
@@ -372,8 +166,6 @@ footer {
 .svg {
 	filter: invert(1);
 }
-
-
 
 #backdrop {
 	position: fixed;
@@ -454,63 +246,38 @@ footer {
 		background-position: center; /* Center the image */
 		background-repeat: no-repeat; /* Do not repeat the image */
 		background-size: cover; /* Resize the background image to cover the entire container */
-	}
-	
+    }
+    
+    #profiles{
+        padding-left: 2em;
+    }
 
-	.closeDescription {
-		display: none;
-	}
-
-	.openDescription {
-		display: block;
-	}
-
-  @media screen and (max-width: 750px) {
-
-	nav {
-	  display: flex;
-	  flex-flow: column;
-	}
-	nav a {
-	  display: none;
-	}
-	nav::before {
-	  content: 'SHOW MENU';
-	  color: #fff;
-	  background: #000;
-	  font-weight: bold;
-	  padding: 0.5em 2em;
-	}
-	nav.open::before {
-	  content: 'HIDE MENU';
-	}
-	nav.open a {
-	  display: block;
-	}
-  
-	nav ::selection {
-	  color: inherit;
-	  background: transparent;
-	}
-
-	h1 {
-		font-size: 2em;
-	}
-
-	nav ul li {
-		font-size: 1em;
-	}
-
-	#banner {
-		background-position: 0 0;
-	}
-
-
-
-
-  }
-
- 
-
- 
-
+    #profiles {
+        list-style: none;
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    #profiles li {
+        margin: 30px;
+    }
+    
+    #profiles li:first-child {
+        margin-top: 0;
+    }
+    
+    #profiles a {
+        color: black;
+    }
+    
+    #profiles img {
+        width: 50px;
+        height: 50px;
+        border: none;
+    }
+    
+    .icon {
+        position: relative;
+        top: 15px;
+        left: -10px;
+    }
