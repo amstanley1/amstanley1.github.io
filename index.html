@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ashley Stanley | Developer</title>
 	<link href="https://fonts.googleapis.com/css?family=K2D:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="css/normalize.css">
 	<link type="text/css" rel="stylesheet" href="css/styles.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
 	<header>
-		<a href="#banner">
-			<h1 id="name">Ashley Stanley</h1>
-		</a>
+		<div id="left-header">
+			<a href="#banner">
+				<h1 id="name">Ashley Stanley</h1>
+			</a>
+			<a href="javascript:void(0);" class="nav-bars"><i class="fa fa-bars"></i></a>
+		</div>
+
 		<nav>
 			<ul>
-				<a href="/index.html"><li>Home</li></a>
-				<a href="javascript:void(0);" id="modal-trigger"><li>About Me</li></a>
-				<a href="projects.html"><li>Projects</li></a>
+				<a href="/index.html">
+					<li>Home</li>
+				</a>
+				<a href="projects.html">
+					<li>Projects</li>
+				</a>
+				<a href="javascript:void(0);" id="modal-trigger">
+					<li>Contact</li>
+				</a>
 			</ul>
 		</nav>
 	</header>
@@ -28,104 +44,108 @@
 			</div>
 		</section>
 		<section id="projectSlider">
-				<div class="arrow-down"></div>
-		
-		 
-	
+			<div class="arrow-down"></div>
 			<div id="slider">
-					<h2 id="sliderHeading">Projects Preview</h2>
-			  <div id="slider-frame">
-				
-				<div id="slider-prev">PREV</div>
-				<div id="slider-next">NEXT</div>
-	
-				<div id="slider-images">
-				  <div data-src="../images/filmreviews.png">
-					Film Reviews Site
-				  </div>
-				  <div data-src="../images/virtualpetsamok.jpg">
-					Virtual Pets Amok
-				  </div>
-				  <div data-src="../images/virtualpetshelter.jpg">
-					Virtual pet Shelter
-				  </div>
+				<h2 id="sliderHeading">Projects Preview</h2>
+				<div id="slider-frame">
+					<div id="slider-prev">PREV</div>
+					<div id="slider-next">NEXT</div>
+					<div id="slider-images">
+						<div data-src="../images/filmreviews.png">
+							Film Reviews Site: Java, Spring MVC
+						</div>
+						<div data-src="../images/virtualpetsamok.jpg">
+							Virtual Pets Amok: Java, Object Oriented
+						</div>
+						<div data-src="../images/virtualpetshelter.jpg">
+							Virtual pet Shelter: Java, Object Oriented
+						</div>
+					</div>
 				</div>
-	
-			  </div>
-			  <div id="slider-caption">
-				The caption.
-			  </div>
+				<div id="slider-caption">
+					The caption.
+				</div>
 			</div>
-	
-		  </section>
-	
+		</section>
+
 		<section id="aboutMe">
 			<div class="arrow-down"></div>
 			<article id="info">
 				<h4>About Me</h4>
 				<div id="headshot"></div>
-				<p id="bio">I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a coding boot camp, learning agile full-stack software development.</p>
+				<p id="bio">I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a coding boot
+					camp, learning agile full-stack software development.</p>
 				<p id="skills-heading">Technical Skills:</p>
-					<p id="skills">Java  •  Spring  •  Hibernate  •  JavaScript  •  jQuery  •  HTML5  •  CSS3  •  MVC  •  Responsive Design / Mobile
-						Structured Query Language (SQL)  •  Transactional Databases / MSSQL  •  Object Oriented  •  Source Control / Git
-						</p>
+				<p id="skills">Java • Spring • Hibernate • JavaScript • jQuery • HTML5 • CSS3 • MVC • Responsive Design / Mobile
+					Structured Query Language (SQL) • Transactional Databases / MSSQL • Object Oriented • Source Control / Git
+				</p>
 			</article>
-		   <article id="contact">
+			<article id="contact">
 				<h4>Contact</h4>
 				<ul id="profiles">
-					<a href="mailto:amstnyl@gmail.com"><li id="email"><img src="../images/gmail.svg" class="icon">amstnly@gmail.com</li></a>
-					<a href="https://github.com/amstanley1"  target="_blank"><li id="github"><img src="../images/github.svg" class="icon">github.com/amstanley1</li></a>
-					<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><li id="linkedIn"><img src="../images/linkedin.svg" class="icon">linkedin.com/ashleystanley1</li></a>
+					<a href="mailto:amstnyl@gmail.com">
+						<li id="email"><img src="../images/gmail.svg" class="icon">amstnly@gmail.com</li>
+					</a>
+					<a href="https://github.com/amstanley1" target="_blank">
+						<li id="github"><img src="../images/github.svg" class="icon">github.com/amstanley1</li>
+					</a>
+					<a href="https://www.linkedin.com/in/ashleystanley1/" target="_blank">
+						<li id="linkedIn"><img src="../images/linkedin.svg" class="icon">linkedin.com/ashleystanley1</li>
+					</a>
 				</ul>
 			</article>
 		</section>
-		
+
 	</main>
 	<footer>
 		<div id="footer-first-column">
+			<a href="mailto:amstnyl@gmail.com"><img src="../images/gmail.svg" class="svg"></a>
+			<a href="https://github.com/amstanley1" target="_blank"><img src="../images/github.svg" class="svg"></a>
+			<a href="https://www.linkedin.com/in/ashleystanley1/" target="_blank"><img src="../images/linkedin.svg" class="svg"></a>
+		</div>
+		<div id="footer-second-column">
 			<p>Computer keyboard background image by Sergi Kabrera on Unsplash</p>
 			<p>Dogs image by Matt Nelson on Unsplash</p>
 			<p>Horses image by Christine Mendoza on Unsplash</p>
-		</div>
-		<div id="footer-second-column">
-			<a href="mailto:amstnyl@gmail.com"><img src="../images/gmail.svg" class="svg"></a>
-			<a href="https://github.com/amstanley1"  target="_blank"><img src="../images/github.svg" class="svg"></a>
-			<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><img src="../images/linkedin.svg" class="svg"></a>	
+
 		</div>
 	</footer>
 
 	<div id="backdrop">
 		<div id="modal">
-		  <button class="text-button">Close</button>
-		  
-	
-		  <div id="modal-content">
-
-					<section id="modal-aboutMe">
-					
-							<article id="modal-info">
-								<h4>About Me</h4>
-								<!--<div id="headshot"></div>-->
-								<p id="bio">I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a coding boot camp, learning agile full-stack software development.</p>
-								<p id="skills-heading">Technical Skills:</p>
-									<p id="skills">Java  •  Spring  •  Hibernate  •  JavaScript  •  jQuery  •  HTML5  •  CSS3  •  MVC  •  Responsive Design / Mobile
-										Structured Query Language (SQL)  •  Transactional Databases / MSSQL  •  Object Oriented  •  Source Control / Git
-										</p>
-							</article>
-							 <article id="modal-contact">
-								<h4>Contact</h4>
-								<ul id="profiles">
-									<a href="mailto:amstnyl@gmail.com"><li id="email"><img src="../images/gmail.svg" class="icon">amstnly@gmail.com</li></a>
-									<a href="https://github.com/amstanley1"  target="_blank"><li id="github"><img src="../images/github.svg" class="icon">github.com/amstanley1</li></a>
-									<a href="https://www.linkedin.com/in/ashleystanley1/"  target="_blank"><li id="linkedIn"><img src="../images/linkedin.svg" class="icon">linkedin.com/ashleystanley1</li></a>
-								</ul>
-							</article>
-						</section>	
-			  
-		  </div>
+			<button class="text-button">Close</button>
+			<div id="modal-content">
+				<section id="modal-aboutMe">
+					<article id="modal-info">
+						<h4>About Me</h4>
+						<div id="headshot"></div>
+						<p id="bio">I'm a junior software developer living in Cleveland, Ohio. I am currently engaged in a coding boot
+							camp, learning agile full-stack software development.</p>
+						<p id="skills-heading">Technical Skills:</p>
+						<p id="skills">Java • Spring • Hibernate • JavaScript • jQuery • HTML5 • CSS3 • MVC • Responsive Design / Mobile
+							Structured Query Language (SQL) • Transactional Databases / MSSQL • Object Oriented • Source Control / Git
+						</p>
+					</article>
+					<article id="modal-contact">
+						<h4>Contact</h4>
+						<ul id="profiles">
+							<a href="mailto:amstnyl@gmail.com">
+								<li id="email"><img src="../images/gmail.svg" class="icon">amstnly@gmail.com</li>
+							</a>
+							<a href="https://github.com/amstanley1" target="_blank">
+								<li id="github"><img src="../images/github.svg" class="icon">github.com/amstanley1</li>
+							</a>
+							<a href="https://www.linkedin.com/in/ashleystanley1/" target="_blank">
+								<li id="linkedIn"><img src="../images/linkedin.svg" class="icon">linkedin.com/ashleystanley1</li>
+							</a>
+						</ul>
+					</article>
+				</section>
+			</div>
 		</div>
-	  </div>
-	
-	  <script src="./script.js"></script>
+	</div>
+	<script src="./baseScript.js"></script>
+	<script src="./sliderScript.js"></script>
 </body>
+
 </html>
