@@ -163,15 +163,12 @@ nav ul li {
 	background: #ccc;
 }
 
-#headshot {
-	height: 100%;
+.headshot {
+	object-fit: cover;
+	height: 50%;
 	width: 40%;
 	border: 1px solid black;
-	background-image: url("../images/stanleyheadshot.jpg"); /* The image used */
-	background-color: #fff; /* Used if the image is unavailable */
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
+	margin-bottom: 15px;
 }
 
 #profiles {
@@ -251,13 +248,18 @@ a {
 	max-width: 775px;
 }
 
-#bio, #skills {
-	padding: 0 4em;
+.bio, .skills {
+	padding: 0;
 	margin-top: 0;
+	font-size: 1.05em;
 	
 }
 
-#skills-heading {
+#info .bio, #info .skills {
+	padding: 0 4em;
+}
+
+.skills-heading {
 	font-weight: 700;
 	padding: 0 4em;
 	margin-bottom: 0;
@@ -425,16 +427,15 @@ footer {
   
 #modal #modal-content {
 	clear: both;
-	padding-top: 1em;
+	width: 100%;
 }
 
 #modal-info, #modal-contact {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 50%;
+	width: 100%;
 	height: 65vh;
-	min-width: 450px;
 	max-width: 775px;
 }
 
@@ -487,6 +488,10 @@ footer {
 		
 	#modal-aboutMe {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#modal-contact {
+		width: 100%;
 	}
 
 	#modal-info {
@@ -585,12 +590,23 @@ footer {
 	#projects {
 		height: 300vh;
 	}
+
+	#profiles {
+		padding: 0;
+		
+	}
+
+
 }
 
 @media screen and (max-width: 600px) {
 	
 	footer {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#profiles {
+		font-size: 16px;
 	}
 
 }
