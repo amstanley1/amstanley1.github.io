@@ -136,7 +136,7 @@ nav ul li {
   #slider-frame {
 	background: #ccc;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top center;
 	background-size: cover;
   	height: 24em;
   }
@@ -171,26 +171,26 @@ nav ul li {
 	margin-bottom: 15px;
 }
 
-#profiles {
+.profiles {
 	list-style: none;
 	font-size: 20px;
 	margin: 0;
 	padding-left: 2em;
 }
 
-#profiles li {
+.profiles li {
 	margin: 30px;
 }
 
-#profiles li:first-child {
+.profiles li:first-child {
 	margin-top: 0;
 }
 
-#profiles a {
+.profiles a {
 	color: black;
 }
 
-#profiles img {
+.profiles img {
 	width: 50px;
 	height: 50px;
 	border: none;
@@ -330,11 +330,15 @@ h4 {
 	background-image: url("../images/virtualpetsamok.jpg");
 }
 
-#virtual-pet-shelter {
+/* #virtual-pet-shelter {
 	background-image: url("../images/virtualpetshelter.jpg");
+} */
+
+#we-can-read-it {
+	background-image: url("../images/wecanreadit.png");
 }
 
-#film-reviews, #virtual-pets-amok, #virtual-pet-shelter {
+#film-reviews, #virtual-pets-amok, #we-can-read-it {
 	background-color: #cccccc; /* Used if the image is unavailable */
 	height: 50%; /* You must set a specified height */
 	background-position: center; /* Center the image */
@@ -591,7 +595,7 @@ footer {
 		height: 300vh;
 	}
 
-	#profiles {
+	.profiles {
 		padding: 0;
 		
 	}
@@ -605,7 +609,7 @@ footer {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-	#profiles {
+	.profiles {
 		font-size: 16px;
 	}
 
